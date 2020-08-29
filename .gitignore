@@ -4,9 +4,10 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+**/secrets/**
 
 ### STS ###
-.apt_generated
+.apt_generatedk
 .classpath
 .factorypath
 .project
@@ -34,4 +35,3 @@ out/
 frontend/node_modules
 fronted/.prttierrc.js
 fronted/.eslintrc.js
-frontend/node_modules
