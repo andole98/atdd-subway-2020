@@ -1,0 +1,128 @@
+GET / HTTP/1.1
+cookie: _ga=GA1.1.753905841.1597279613; JSESSIONID=E61EB7D8208464A30640D2F36FA4F82A
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding: gzip, deflate, br
+sec-fetch-dest: document
+sec-fetch-user: ?1
+sec-fetch-mode: navigate
+sec-fetch-site: same-origin
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+upgrade-insecure-requests: 1
+cache-control: max-age=0
+connection: close
+host: localhost:8081
+
+
+
+HTTP/1.1 200 OK
+Connection: close
+Set-Cookie: JSESSIONID=FB07898BDCE154AD8494A15E8FB60825; Path=/; HttpOnly
+Content-Length: 1000
+Content-Language: ko-KR
+Date: Sat, 29 Aug 2020 12:04:49 GMT
+Content-Type: text/html;charset=UTF-8
+
+
+
+GET /members/me HTTP/1.1
+cookie: _ga=GA1.1.753905841.1597279613; JSESSIONID=FB07898BDCE154AD8494A15E8FB60825
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:8081/
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+authorization: Bearer undefined
+accept: application/json, text/plain, */*
+connection: close
+host: localhost:8081
+
+
+
+HTTP/1.1 401 Unauthorized
+Transfer-Encoding: chunked
+Connection: close
+Date: Sat, 29 Aug 2020 12:04:51 GMT
+Content-Type: application/json
+
+
+
+POST /login/token HTTP/1.1
+cookie: _ga=GA1.1.753905841.1597279613; JSESSIONID=FB07898BDCE154AD8494A15E8FB60825
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:8081/login
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+origin: http://localhost:8081
+content-type: application/json;charset=UTF-8
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+authorization: Basic YUBiLmM6MTIzNA==
+accept: application/json, text/plain, */*
+content-length: 2
+connection: close
+host: localhost:8081
+
+
+
+HTTP/1.1 302 Found
+Connection: close
+Vary: Origin
+Content-Length: 0
+Date: Sat, 29 Aug 2020 12:04:59 GMT
+Location: http://localhost:8081/
+
+
+
+GET / HTTP/1.1
+cookie: _ga=GA1.1.753905841.1597279613; JSESSIONID=FB07898BDCE154AD8494A15E8FB60825
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:8081/login
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+authorization: Basic YUBiLmM6MTIzNA==
+accept: application/json, text/plain, */*
+connection: close
+host: localhost:8081
+
+
+
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 1000
+Content-Language: ko-KR
+Date: Sat, 29 Aug 2020 12:04:59 GMT
+Content-Type: text/html;charset=UTF-8
+
+
+
+GET /members/me HTTP/1.1
+cookie: _ga=GA1.1.753905841.1597279613; JSESSIONID=FB07898BDCE154AD8494A15E8FB60825
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding: gzip, deflate, br
+referer: http://localhost:8081/login
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36
+authorization: Bearer undefined
+accept: application/json, text/plain, */*
+connection: close
+host: localhost:8081
+
+
+
+HTTP/1.1 401 Unauthorized
+Transfer-Encoding: chunked
+Connection: close
+Date: Sat, 29 Aug 2020 12:04:59 GMT
+Content-Type: application/json
+
+
+
