@@ -6,7 +6,7 @@
             <totalSizeCap>3GB</totalSizeCap>
         </rollingPolicy>
         <encoder>
-            <pattern>%fullRequest%n%n%fullResponse</pattern>
+            <pattern>%date{yyyy-MM-dd;HH:mm:ss.SSS, Asia/Seoul}%n%fullRequest%n%n%fullResponse</pattern>
         </encoder>
     </appender>
 
