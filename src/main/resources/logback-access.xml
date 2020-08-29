@@ -1,7 +1,7 @@
 <configuration>
     <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>subway.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>subway.%d{yyyy-MM-dd, Asia/Seoul}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
             <totalSizeCap>3GB</totalSizeCap>
         </rollingPolicy>
